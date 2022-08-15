@@ -8,5 +8,6 @@
 
 5. open a terminal in the directory with the .exe
 6. `main <operation> <args>` run the file with arguments, operations include 'dp' for creating a datapoint file (required) and 'plot' for create graphs
-- 'dp' <filename (excl. file extension)>
-- 'plot' <gender> <age_range> <type (FVC, FEV)>
+- `dp <filename (excl. file extension)>`
+- `plot <gender> <age_range> <type (FVC, FEV)>`
+- Ex. `main plot male 18-29 FEV`
