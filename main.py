@@ -8,6 +8,7 @@ if __name__ == '__main__':
     args = sys.argv
     if 'dp' in args:
         excel_to_json(
+            fname=f'{args[2]}.xlsx',
             sheetname='2018',
             HEADINGS_ROW=3,
             gender_col=1,

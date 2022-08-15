@@ -3,8 +3,8 @@ import openpyxl as opx
 import json
 
 
-def excel_to_json(sheetname, HEADINGS_ROW, gender_col, age_col, FVC_col, FEV_col, ENTRIES, heading_spacing):
-    wb = opx.load_workbook(os.path.join('data','2008-2022_Physiological_Measurements.xlsx'))
+def excel_to_json(fname, sheetname, HEADINGS_ROW, gender_col, age_col, FVC_col, FEV_col, ENTRIES, heading_spacing):
+    wb = opx.load_workbook(os.path.join('data',fname))
     ws = wb[sheetname]
 
     data_points = {
